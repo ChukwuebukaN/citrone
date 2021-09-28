@@ -14,13 +14,12 @@ function HomePage() {
   return (
     <div>
       <CitroneLogo className="absolute ml-4 mt-4 top-0 left-0" />
-      <CitroneBgUp className="absolute top-0 right-0" />
+      <CitroneBgUp className="absolute top-0 right-0 " />
       <CitroneBgDown className="absolute bottom-0 left-0" />
       <div className="flex h-screen">
         <div className="m-auto">
-          <div className="text-center text-8xl font-black">
-            <h1 className="">Hello Citronite!</h1>
-            {/* <h1 className="text-4xl mt-2">👋</h1> */}
+          <div className="text-center font-black">
+            <h1 className=" text-6xl mb-8 leading-tight">Hello Citronite!</h1>
             <button
               type="button"
               className="enter-classroom-btn"
