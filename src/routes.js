@@ -12,7 +12,7 @@ function Routes() {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={HomePage} />
-          <Route path="/CreateSchedule" component={lazyClassroom} />
+          <Route path="/classroom" component={lazyClassroom} />
         </Switch>
       </BrowserRouter>
     </React.Suspense>
