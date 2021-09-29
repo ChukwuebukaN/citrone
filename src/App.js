@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
-import "./components/homePage/homePage.css";
-import "./components/header/header.css";
+import "./components/home/home.css";
+import "./components/classroom/breadcrumbs/breadcrumbs.css";
 import Routes from "./routes";
 
 function App() {

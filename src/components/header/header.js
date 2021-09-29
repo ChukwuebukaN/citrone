@@ -1,13 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { ReactComponent as CitroneLogo } from "./svg/citrone-logo.svg";
 import { ReactComponent as CalenderIcon } from "./svg/calender-icon.svg";
 import { ReactComponent as BellIcon } from "./svg/bell-icon.svg";
 
 function Header() {
+  const history = useHistory();
+
+  /** Routes user back to home page */
+  const handleHomeRoute = () => {
+    history.push("/");
+  };
+
   return (
-    <div>
-      <div className="border-b-2 border-gray-300 pb-4">
-        <CitroneLogo className="ml-6 mt-4 top-0 left-0" />
+    <div className="sticky top-0 z-50 bg-white">
+      <div className="border-b-2 border-gray-300 pb-4 pt-4">
+        <button type="button" onClick={handleHomeRoute}>
+          <CitroneLogo className="ml-6 top-0 left-0" />
+        </button>
         <button
           type="button"
           className="absolute top-0 right-36 flex items-center justify-center"
@@ -31,7 +41,7 @@ function Header() {
           </span>
         </button>
         <div className="absolute top-4 right-6 rounded-full h-10 w-10 flex items-center justify-center bg-red-500 text-white text-sm">
-          BB
+          BA
         </div>
       </div>
     </div>

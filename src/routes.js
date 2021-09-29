@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import HomePage from "./components/homePage/homePage";
+import Home from "./components/home/home";
 
 const lazyClassroom = React.lazy(() =>
   import("./components/classroom/classroom")
@@ -11,7 +11,7 @@ function Routes() {
     <React.Suspense fallback="Loading...">
       <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={HomePage} />
+          <Route exact path="/" component={Home} />
           <Route path="/classroom" component={lazyClassroom} />
         </Switch>
       </BrowserRouter>
