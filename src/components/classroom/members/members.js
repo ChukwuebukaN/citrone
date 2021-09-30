@@ -2,6 +2,22 @@ import React from "react";
 import { ReactComponent as MembersChat } from "../img/members-chat.svg";
 
 function Members() {
+  /** Reusable components for members item */
+  // eslint-disable-next-line react/prop-types
+  const MembersItem = ({ title = "" }) => (
+    <div className="pl-2 pb-2 pt-4">
+      <div className="flex justify-between">
+        <div className="ml-2 mb-2 rounded overflow-hidden cursor-pointer flex items-center">
+          <div className="text-xs rounded-full lg:h-8 lg:w-8 h-6 w-6 mr-2 flex items-center justify-center bg-red-500 text-white text-md">
+            DC
+          </div>
+          <p className="font-bold text-base">{title}</p>
+        </div>
+        <MembersChat className="mt-2 mr-4 cursor-pointer" />
+      </div>
+    </div>
+  );
+
   /** Displays classroom members */
   const displayUpcoming = () => {
     return (
@@ -12,50 +28,10 @@ function Members() {
             View All
           </button>
         </div>
-        <div className="pl-2 pr-2 pb-2 pt-4">
-          <div className="flex justify-between">
-            <div className=" mb-2 rounded overflow-hidden cursor-pointer flex items-center">
-              <div className="rounded-full lg:h-8 lg:w-8 h-6 w-6 mr-4 flex items-center justify-center bg-red-500 text-white text-md">
-                DC
-              </div>
-              <p className="font-bold text-base">Dave Chapelle</p>
-            </div>
-            <MembersChat className="mt-2 cursor-pointer" />
-          </div>
-        </div>
-        <div className="p-2">
-          <div className="flex justify-between">
-            <div className=" mb-2 rounded overflow-hidden cursor-pointer flex items-center">
-              <div className="rounded-full lg:h-8 lg:w-8 h-6 w-6 mr-4 flex items-center justify-center bg-red-500 text-white text-md">
-                DC
-              </div>
-              <p className="font-bold text-base">Dave Chapelle</p>
-            </div>
-            <MembersChat className="mt-2 cursor-pointer" />
-          </div>
-        </div>
-        <div className="p-2">
-          <div className="flex justify-between">
-            <div className=" mb-2 rounded overflow-hidden cursor-pointer flex items-center">
-              <div className="rounded-full lg:h-8 lg:w-8 h-6 w-6 mr-4 flex items-center justify-center bg-red-500 text-white text-md">
-                DC
-              </div>
-              <p className="font-bold text-base">Dave Chapelle</p>
-            </div>
-            <MembersChat className="mt-2 cursor-pointer" />
-          </div>
-        </div>
-        <div className="p-2">
-          <div className="flex justify-between">
-            <div className=" mb-2 rounded overflow-hidden cursor-pointer flex items-center">
-              <div className="rounded-full lg:h-8 lg:w-8 h-6 w-6 mr-4 flex items-center justify-center bg-red-500 text-white text-md">
-                DC
-              </div>
-              <p className="font-bold text-base">Dave Chapelle</p>
-            </div>
-            <MembersChat className="mt-2 cursor-pointer" />
-          </div>
-        </div>
+        <MembersItem title="Dave Chapelle" />
+        <MembersItem title="Dave Chapelle" />
+        <MembersItem title="Dave Chapelle" />
+        <MembersItem title="Dave Chapelle" />
       </div>
     );
   };
