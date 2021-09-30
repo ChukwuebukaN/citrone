@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { ReactComponent as CitroneLogo } from "../header/svg/citrone-logo.svg";
-import { ReactComponent as CitroneBgUp } from "../svg/citrone-bgup.svg";
-import { ReactComponent as CitroneBgDown } from "../svg/citrone-bgdown.svg";
+import { ReactComponent as CitroneLogo } from "../header/img/citrone-logo.svg";
+import { ReactComponent as CitroneBgUp } from "../img/citrone-bgup.svg";
+import { ReactComponent as CitroneBgDown } from "../img/citrone-bgdown.svg";
 
 function HomePage() {
   const history = useHistory();

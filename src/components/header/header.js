@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import { ReactComponent as CitroneLogo } from "./svg/citrone-logo.svg";
-import { ReactComponent as CalenderIcon } from "./svg/calender-icon.svg";
-import { ReactComponent as BellIcon } from "./svg/bell-icon.svg";
+import { ReactComponent as CitroneLogo } from "./img/citrone-logo.svg";
+import { ReactComponent as CalenderIcon } from "./img/calender-icon.svg";
+import { ReactComponent as BellIcon } from "./img/bell-icon.svg";
 
 function Header() {
   const history = useHistory();

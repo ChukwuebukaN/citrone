@@ -1,11 +1,13 @@
 import React, { useEffect } from "react";
 import Header from "../header/header";
 import Breadcrumbs from "./breadcrumbs/breadcrumbs";
-import { ReactComponent as CitroneBgUp } from "../svg/citrone-bgup.svg";
-import { ReactComponent as CitroneBgDown } from "../svg/citrone-bgdown.svg";
+import { ReactComponent as CitroneBgUp } from "../img/citrone-bgup.svg";
+import { ReactComponent as CitroneBgDown } from "../img/citrone-bgdown.svg";
 import Course from "./course/course";
 import Lesson from "./lesson/lesson";
 import Post from "./post/post";
+import Upcoming from "./upcoming/upcoming";
+import Members from "./members/members";
 
 function Classroom() {
   /** Page title */
@@ -26,7 +28,7 @@ function Classroom() {
       <nav>
         <Breadcrumbs className="" />
       </nav>
-      <section className=" flex">
+      <section className=" ">
         <div className="m-auto">
           <div className="grid justify-items-center lg:grid-cols-3">
             <section>
@@ -37,7 +39,8 @@ function Classroom() {
               <Post />
             </section>
             <section>
-              <Lesson />
+              <Upcoming />
+              <Members />
             </section>
           </div>
         </div>
