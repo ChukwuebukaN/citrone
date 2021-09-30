@@ -10,7 +10,7 @@ function Header() {
   };
 
   return (
-    <div>
+    <div className="lg:pl-20">
       <ul className="breadcrumb">
         <li>
           <button type="button" onClick={handleHomeRoute}>

@@ -23,10 +23,10 @@ function Classroom() {
   return (
     <div>
       <Header className="" />
-      <CitroneBgUp className="citrone-bg absolute right-0" />
+      <CitroneBgUp className="citrone-bg fixed right-0" />
       <CitroneBgDown className="citrone-bg fixed  bottom-0 left-0" />
       <nav>
-        <Breadcrumbs className="" />
+        <Breadcrumbs />
       </nav>
       <section className=" ">
         <div className="m-auto">
