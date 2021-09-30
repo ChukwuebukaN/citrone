@@ -14,7 +14,7 @@ function Post() {
               <textarea
                 id="message"
                 name="message"
-                className="h-40 lg:h-28 resize-none outline-white py-2 px-4"
+                className="w-full h-40 lg:h-28 resize-none outline-white py-2 px-4"
                 placeholder="Type Message...."
               />
             </label>
