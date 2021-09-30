@@ -5,7 +5,7 @@ function Members() {
   /** Displays classroom members */
   const displayUpcoming = () => {
     return (
-      <div className="mb-8 w-64 lg:w-56 rounded-md bg-white border-2 border-gray-100">
+      <div className="mb-8 w-72 lg:w-56 rounded-md bg-white border-2 border-gray-100">
         <div className="flex justify-between border-b-2">
           <p className="p-3 font-bold text-xl ">Members</p>
           <button type="button" className="text-red-500 text-sm mr-4">

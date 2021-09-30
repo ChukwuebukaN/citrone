@@ -13,7 +13,7 @@ function Post() {
               <textarea
                 id="message"
                 name="message"
-                className="w-64 h-24 lg:w-96 lg:h-28 resize-none outline-white py-2 px-4"
+                className="h-24 lg:h-28 resize-none outline-white py-2 px-4"
                 placeholder="Type Message...."
               />
             </label>
@@ -28,7 +28,7 @@ function Post() {
     return (
       <div>
         <p className="mb-2 font-bold">Posts</p>
-        <div className="h-56 w-64 lg:h-64 lg:w-full rounded border-2 border-gray-100 bg-white">
+        <div className="h-56 lg:h-64 lg:w-full rounded border-2 border-gray-100 bg-white">
           <div className="px-2 py-2 lg:px-6 lg:py-4 flex justify-between">
             <div className="rounded-full lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center bg-red-500 text-white text-md">
               KJ
@@ -45,7 +45,7 @@ function Post() {
               </span>
             </button>
           </div>
-          <div className="mb-4 h-20 w-52 lg:w-80 m-auto rounded border-2 border-gray-100 bg-white">
+          <div className="mb-4 h-20 w-60 lg:w-80 m-auto rounded border-2 border-gray-100 bg-white">
             <div className="px-2 py-2 lg:px-6 lg:py-4 flex justify-between">
               <div>
                 <p className="font-bold text-sm mb-2">Assignment Title</p>
@@ -65,7 +65,7 @@ function Post() {
             </div>
           </div>
           <div className="flex items-center justify-center pt-4 border-t-2 border-gray-100 bg-white">
-            <div className="text-xs mr-4 rounded-full lg:h-10 lg:w-10 h-6 w-6 flex items-center justify-center bg-red-500 text-white text-md">
+            <div className="text-xs mr-4 rounded-full lg:h-10 lg:w-10 h-8 w-8 flex items-center justify-center bg-red-500 text-white text-md">
               BA
             </div>
             <div className="rounded border-2 border-gray-100 bg-white">
@@ -74,7 +74,7 @@ function Post() {
                   <textarea
                     id="comment"
                     name="message"
-                    className="w-40 h-8 lg:w-64 lg:h-8 text-xs resize-none outline-white px-2 py-2"
+                    className="w-48 h-8 lg:w-64 lg:h-8 text-xs resize-none outline-white px-2 py-2"
                     placeholder="Write a comment..."
                   />
                 </label>
@@ -87,7 +87,7 @@ function Post() {
   };
 
   return (
-    <div className="mb-8 ">
+    <div className="post mb-8 ml-4">
       {displayMessageBox()}
       {displayTeacherPost()}
     </div>

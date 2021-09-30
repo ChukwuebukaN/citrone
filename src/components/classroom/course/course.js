@@ -5,7 +5,7 @@ import { ReactComponent as CourseMenu } from "../img/course-menu.svg";
 function Course() {
   return (
     <div>
-      <div className="w-64 mb-4 rounded-lg overflow-hidden shadow-md bg-white cursor-pointer">
+      <div className="w-72 lg:w-64 mb-4 rounded-lg overflow-hidden shadow-md bg-white cursor-pointer">
         <img src={CourseImage} className="w-full" alt="Description of course" />
         <div className="px-6 py-4">
           <div className="flex justify-between  ">

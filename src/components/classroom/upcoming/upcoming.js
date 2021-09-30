@@ -5,7 +5,7 @@ function Upcoming() {
   /** Displays users upcoming */
   const displayUpcoming = () => {
     return (
-      <div className="mb-4 w-64 lg:w-56 rounded-md bg-white border-2 border-gray-100">
+      <div className="mb-4 w-72 lg:w-56 rounded-md bg-white border-2 border-gray-100">
         <p className="p-3 font-bold text-xl">Upcoming</p>
         <div className="border-t-2 p-4 ">
           <div className="mb-4">
