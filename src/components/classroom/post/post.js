@@ -96,7 +96,7 @@ function Post() {
       <div className="mb-8">
         <div className="h-42 lg:h-42 mb-16 lg:w-full rounded border-2 border-gray-100 bg-white">
           <div className="px-4 py-4 lg:px-6 lg:py-4 flex justify-between">
-            <div className="rounded-full lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center bg-red-500 text-white text-md">
+            <div className="rounded-full mr-1 lg:h-12 lg:w-12 h-8 w-8 flex items-center justify-center bg-red-500 text-white text-md">
               JA
             </div>
             <div>
@@ -145,9 +145,9 @@ function Post() {
               </div>
               <div className="rounded border-2 border-gray-100 bg-white">
                 <form>
-                  <label htmlFor="comment">
+                  <label htmlFor="comment2">
                     <textarea
-                      id="comment"
+                      id="comment2"
                       name="message"
                       className="w-48 h-8 lg:w-80 lg:h-8 text-xs resize-none outline-white px-2 py-2"
                       placeholder="Write a comment..."
@@ -163,9 +163,9 @@ function Post() {
             </div>
             <div className="rounded border-2 border-gray-100 bg-white">
               <form>
-                <label htmlFor="comment">
+                <label htmlFor="comment3">
                   <textarea
-                    id="comment"
+                    id="comment3"
                     name="message"
                     className="w-48 h-8 lg:w-80 lg:h-8 text-xs resize-none outline-white px-2 py-2"
                     placeholder="Write a comment..."
